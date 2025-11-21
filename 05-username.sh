@@ -1,5 +1,8 @@
 #!/bin/bash
 
+date=$(date)
+echo "Current date and time is: $date"
+
 echo "please enter your username:"
 read username
 echo "enter your passwd:"
