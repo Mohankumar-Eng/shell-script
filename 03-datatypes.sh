@@ -1,7 +1,7 @@
 #!/bin/bash
 
-num=30
-num1=200
+num=$1
+num1=$2
 
 sum=$((num+num1))
 
