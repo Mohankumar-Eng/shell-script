@@ -9,9 +9,9 @@ Logfile="/tmp/$0-$Timestamp.log"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "installing....$2 FAILED"
+        echo -e "installing....$2 \e[31m FAILED \e[0m"
     else
-        echo "installing.....$2 SUCCESS"
+        echo -e "installing.....$2 \e[32m SUCCESS\e[0m"
     fi
 }
 
