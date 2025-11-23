@@ -10,6 +10,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then
         echo -e "installing....$2 \e[31m FAILED \e[0m"
+        exit 1
     else
         echo -e "installing.....$2 \e[32m SUCCESS\e[0m"
     fi
@@ -18,6 +19,7 @@ VALIDATE(){
 if [ $ID -ne 0 ]
 then
     echo "ERROR: please run this script root access"
+    exit 1
 else
     echo "you are the root"
 fi
