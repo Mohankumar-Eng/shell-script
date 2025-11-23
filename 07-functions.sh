@@ -8,6 +8,7 @@ VALIDATE() {
         echo "Installing....$2 FALIED"
     else
         echo "Installing......$2 SUCCESS"
+    fi
 }
 
 if [ $ID -ne 0 ]
