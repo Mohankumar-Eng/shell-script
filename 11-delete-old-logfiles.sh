@@ -7,7 +7,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-files_to_delete=$(find $SOURCE_DIRECTORY -type f -mtim +14 "*.log")
+files_to_delete=$(find $SOURCE_DIRECTORY -type f -mtime +14 "*.log")
 
 if [ ! -d $SOURCE_DIRECTORY ]
 then
