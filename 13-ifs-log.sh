@@ -13,7 +13,7 @@ then
     exit 1
 fi
 
-while IFS= ":" read -r user_name password user_id group_id user_fullname home_dir shell_path
+while IFS= ":" read -r username password userid groupid userfullname homedir shellpath
 do
     echo "user name:$user_name"
     echo "user id:$user_id"
