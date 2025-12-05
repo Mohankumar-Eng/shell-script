@@ -9,11 +9,11 @@ N="\e[0m"
 
 if [ ! -f $file ]
 then
-    echo -e "$R source filr : $file does not exit $N"
+    echo -e "$R source file : $file does not exist $N"
     exit 1
 fi
 
-while IFS= ":" read -r username password userid groupid userfullname homedir shellpath
+while IFS=":" read -r username password userid groupid userfullname homedir shellpath
 do
     echo "user name:$user_name"
     echo "user id:$user_id"
