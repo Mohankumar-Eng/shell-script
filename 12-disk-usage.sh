@@ -9,7 +9,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-while IFS=rad line
+while IFS=read line
 do
     usage=$(echo $line | awk '{print $6f}' | cut -d % f1)
     partition=$(echo $line | awk '{print $6f}')
