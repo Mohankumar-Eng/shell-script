@@ -14,7 +14,7 @@ echo "Script execution started at: $(date)" | tee -a $LOG_FILE
 
 if [ $USERID -ne 0 ]
 then
-    echo -e "$R ERROR: : You must be run this script as root user $N" tee -a $LOG_FILE
+    echo -e "$R ERROR: : You must be run this script as root user $N" | tee -a $LOG_FILE
     exit 1
 else
     echo -e "$G You are the root user, you can run this script $N" | tee -a $LOG_FILE
