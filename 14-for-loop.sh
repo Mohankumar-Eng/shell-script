@@ -31,7 +31,7 @@ VALIDATE() {
 
 for package in $@
 do
-    dnf list installed $package
+    dnf list installed "$package"
     if [ $? -eq 0 ]
     then
         echo -e "$R $package is not installed $N...$G going to install it$N"
