@@ -28,7 +28,7 @@ do
     dnf list installed $package
     if [ $? -eq 0 ]
     then
-        echo -e "$R $package is not installed $N...$Ggoing to install it$N"
+        echo -e "$R $package is not installed $N...$G going to install it$N"
         dnf install $package -y
         VALIDATE $? "$package"
     else
